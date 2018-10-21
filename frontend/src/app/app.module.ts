@@ -7,7 +7,8 @@ import { NewMessageComponent } from './new-component.component'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatFormFieldModule, MatCardModule, MatInputModule,MatSnackBarModule,MatToolbarModule} from '@angular/material';
 import { WebService } from './web.service';
-import { HttpModule } from '@angular/http'
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,7 @@ import { HttpModule } from '@angular/http'
   declarations: [
     AppComponent,
     MessagesComponent,
-    NewMessageComponent
+    NewMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { HttpModule } from '@angular/http'
     MatInputModule,
     MatSnackBarModule,
     MatToolbarModule,
+    FormsModule,
     HttpModule
   ],
   providers: [WebService],
