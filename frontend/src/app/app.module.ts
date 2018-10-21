@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MessagesComponent }  from './messages.component'
+import { NewMessageComponent } from './new-component.component'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCardModule, MatInputModule,MatSnackBarModule,MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatFormFieldModule, MatCardModule, MatInputModule,MatSnackBarModule,MatToolbarModule} from '@angular/material';
 import { WebService } from './web.service';
 import { HttpModule } from '@angular/http'
 
@@ -13,12 +14,14 @@ import { HttpModule } from '@angular/http'
 @NgModule({
   declarations: [
     AppComponent,
-    MessagesComponent
+    MessagesComponent,
+    NewMessageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatFormFieldModule,
     MatCardModule,
     MatInputModule,
     MatSnackBarModule,
