@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MessagesComponent }  from './messages.component'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCardModule, MatInputModule,MatSnackBarModule,MatToolbarModule} from '@angular/material';
+import { WebService } from './web.service';
+import { HttpModule } from '@angular/http'
 
 
 
@@ -20,9 +22,10 @@ import {MatButtonModule, MatCardModule, MatInputModule,MatSnackBarModule,MatTool
     MatCardModule,
     MatInputModule,
     MatSnackBarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [WebService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
